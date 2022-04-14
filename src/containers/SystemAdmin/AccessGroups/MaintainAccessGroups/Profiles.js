@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import React, { Fragment, useCallback, useState } from "react";
 import { connect } from "react-redux";
 import ReactGrid from "../../../../components/ReactGrid";
-import ProfileDlg from "./TabDlgs/ProfilesDlg";
+import BrowseProfile from "./BrowseTaps/BrowseProfile";
 
 const Profiles = () => {
   const [open, setOpen] = useState(false);
@@ -18,7 +18,6 @@ const Profiles = () => {
       defaultVisible: false,
       defaultWidth: 60,
       type: "number",
-      render: () => {},
     },
     {
       name: "profile",
@@ -63,7 +62,7 @@ const Profiles = () => {
           }}
         />
       </Box>
-      <ProfileDlg show={open} handleClose={handleClose} />
+      <BrowseProfile show={open} handleClose={handleClose} />
     </fragment>
   );
 };

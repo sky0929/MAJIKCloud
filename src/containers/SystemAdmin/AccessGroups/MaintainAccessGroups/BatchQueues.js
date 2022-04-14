@@ -4,7 +4,7 @@ import React, { Fragment, useCallback } from "react";
 import { useState } from "react";
 import { connect } from "react-redux";
 import ReactGrid from "../../../../components/ReactGrid";
-import BatchQueuesDlg from "./TabDlgs/BatchQueuesDlg";
+import BrowseBatchQueues from "./BrowseTaps/BrowseBatchQueues";
 
 const BatchQueues = () => {
   const [open, setOpen] = useState(false);
@@ -33,6 +33,7 @@ const BatchQueues = () => {
             </Grid>
             <Grid item xs={2}>
               <Button
+                size="small"
                 onClick={() => {
                   setOpen(true);
                 }}
@@ -64,7 +65,7 @@ const BatchQueues = () => {
           }}
         />
       </Box>
-      <BatchQueuesDlg show={open} handleClose={handleClose} />
+      <BrowseBatchQueues show={open} handleClose={handleClose} />
     </fragment>
   );
 };

@@ -7,7 +7,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import ReactGrid from "../../../../../components/ReactGrid";
 import React, { useState } from "react";
 
-const ProfilesDlg = (props) => {
+const ProgramSearchCriteria = (props) => {
   const columns = [
     {
       name: "id",
@@ -16,11 +16,28 @@ const ProfilesDlg = (props) => {
       defaultWidth: 60,
       type: "number",
     },
-    { name: "profile", header: "Profile", defaultFlex: 1 },
-    { name: "description", header: "Description", defaultFlex: 2 },
+    { name: "queue", header: "Queue", defaultFlex: 1 },
+    { name: "description", header: "Description", defaultFlex: 3 },
+    { name: "statusflag", header: "Status Flag", defaultFlex: 1 },
+    { name: "status", header: "Status", defaultFlex: 1 },
   ];
 
-  const data = [{ id: 1, profile: "SML", description: "Sydney Markets LTD" }];
+  const data = [
+    {
+      id: 1,
+      queue: "EOM",
+      description: "End of Month Reports",
+      statusflag: "",
+      status: "Unused",
+    },
+    {
+      id: 2,
+      queue: "MAIN",
+      description: "EoM Job Queue",
+      statusflag: "",
+      status: "Unused",
+    },
+  ];
 
   const onSelectionChange = (selectedRow) => {
     console.log(selectedRow);
@@ -38,7 +55,7 @@ const ProfilesDlg = (props) => {
       open={props.show}
       onClose={props.handleClose}
     >
-      <DialogTitle>SYPRFB: Browse Profiles</DialogTitle>
+      <DialogTitle>Program Search Criteria</DialogTitle>
       <DialogContent>
         <Box sx={{ mb: 1 }}>
           <ReactGrid
@@ -64,4 +81,4 @@ const ProfilesDlg = (props) => {
   );
 };
 
-export default ProfilesDlg;
+export default ProgramSearchCriteria;

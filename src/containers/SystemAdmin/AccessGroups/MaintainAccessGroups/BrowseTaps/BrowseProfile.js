@@ -7,7 +7,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import ReactGrid from "../../../../../components/ReactGrid";
 import React, { useState } from "react";
 
-const BatchQueuesDlg = (props) => {
+const BrowseProfile = (props) => {
   const columns = [
     {
       name: "id",
@@ -16,28 +16,11 @@ const BatchQueuesDlg = (props) => {
       defaultWidth: 60,
       type: "number",
     },
-    { name: "queue", header: "Queue", defaultFlex: 1 },
-    { name: "description", header: "Description", defaultFlex: 3 },
-    { name: "statusflag", header: "Status Flag", defaultFlex: 1 },
-    { name: "status", header: "Status", defaultFlex: 1 },
+    { name: "profile", header: "Profile", defaultFlex: 1 },
+    { name: "description", header: "Description", defaultFlex: 2 },
   ];
 
-  const data = [
-    {
-      id: 1,
-      queue: "EOM",
-      description: "End of Month Reports",
-      statusflag: "",
-      status: "Unused",
-    },
-    {
-      id: 2,
-      queue: "MAIN",
-      description: "EoM Job Queue",
-      statusflag: "",
-      status: "Unused",
-    },
-  ];
+  const data = [{ id: 1, profile: "SML", description: "Sydney Markets LTD" }];
 
   const onSelectionChange = (selectedRow) => {
     console.log(selectedRow);
@@ -55,7 +38,7 @@ const BatchQueuesDlg = (props) => {
       open={props.show}
       onClose={props.handleClose}
     >
-      <DialogTitle>SYPRFB: Browse Batch Queues</DialogTitle>
+      <DialogTitle>SYPRFB: Browse Profiles</DialogTitle>
       <DialogContent>
         <Box sx={{ mb: 1 }}>
           <ReactGrid
@@ -81,4 +64,4 @@ const BatchQueuesDlg = (props) => {
   );
 };
 
-export default BatchQueuesDlg;
+export default BrowseProfile;
