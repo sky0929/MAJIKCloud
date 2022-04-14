@@ -36,7 +36,6 @@ const Profiles = () => {
     { id: 11, accessgroup: "HMPOS2", description: "Haymarket POS Backup" },
     { id: 12, accessgroup: "INFRINGE", description: "Infringement Group" },
     { id: 13, accessgroup: "KIOSK", description: "KIOSK ACCESS GROUP" },
-    { id: 14, accessgroup: "KIOSK", description: "KIOSK ACCESS GROUP" },
   ];
 
   const onSelectionChange = (selectedRow) => {
