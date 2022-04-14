@@ -26,15 +26,22 @@ const Security = () => {
       defaultFlex: 1,
       render: (value) => {
         return (
-          <Grid container direction="row" spacing={0}>
-            <Grid item xs={10} className="list">
+          <Grid
+            container
+            direction="row"
+            spacing={0}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid item xs={9} className="list">
               {value.value}
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={3}>
               <Button
                 onClick={() => {
                   setOpen(true);
                 }}
+                variant="contained"
               >
                 ...
               </Button>
