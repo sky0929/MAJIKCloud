@@ -7,7 +7,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import ReactGrid from "../../../../../components/ReactGrid";
 import React, { useState } from "react";
 
-const BatchQueuesDlg = ({}) => {
+const BatchQueuesDlg = (props) => {
   const columns = [
     {
       name: "id",
@@ -43,13 +43,8 @@ const BatchQueuesDlg = ({}) => {
     console.log(selectedRow);
   };
 
-  const [open, setOpen] = useState(true);
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxWidth] = useState("sm");
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const [value, setValue] = React.useState("1");
 
@@ -57,8 +52,8 @@ const BatchQueuesDlg = ({}) => {
     <Dialog
       fullWidth={fullWidth}
       maxWidth={maxWidth}
-      open={open}
-      onClose={handleClose}
+      open={props.show}
+      onClose={props.handleClose}
     >
       <DialogTitle>SYPRFB: Browse Batch Queues</DialogTitle>
       <DialogContent>
@@ -76,7 +71,7 @@ const BatchQueuesDlg = ({}) => {
             <Button variant="contained">Select</Button>
             <Button variant="contained">Create</Button>
             <Button variant="contained">Modify</Button>
-            <Button variant="contained" onClick={handleClose}>
+            <Button variant="contained" onClick={props.handleClose}>
               Close
             </Button>
           </Stack>
