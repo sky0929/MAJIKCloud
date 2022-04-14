@@ -1,0 +1,11 @@
+/* .rdg-selected {
+  border: none !important;
+}
+
+.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__row--selected {
+  background: none;
+} */
+
+.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__row.InovuaReactDataGrid__row--selected {
+  background: none !important;
+}
