@@ -1,12 +1,17 @@
 import React, { useState } from "react";
+import AccessGroupMoreInfo from "./BrowseTaps/AccessGroupMoreInfo";
 
 const UserField = () => {
+  const [open, setOpen] = useState(true);
 
-return (
-  <div>
-    UserField
-  </div>
-)
-}
+  const handleClose = () => {
+    setOpen(false);
+  };
+  return (
+    <fragment>
+      <AccessGroupMoreInfo show={open} handleClose={handleClose} />
+    </fragment>
+  );
+};
 
 export default UserField;
