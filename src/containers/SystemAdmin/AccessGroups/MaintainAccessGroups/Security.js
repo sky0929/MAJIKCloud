@@ -42,7 +42,6 @@ const Security = () => {
                 onClick={() => {
                   setOpen(true);
                 }}
-                variant="contained"
               >
                 ...
               </Button>
