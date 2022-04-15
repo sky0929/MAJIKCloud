@@ -1,4 +1,13 @@
-import { Button, Stack, Grid } from "@mui/material";
+import {
+  Button,
+  Stack,
+  Grid,
+  TextField,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+} from "@mui/material";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -18,7 +27,7 @@ const AccessGroupMoreInfo = (props) => {
     >
       <DialogTitle>Access Group More Info</DialogTitle>
       <DialogContent>
-        <Grid container direction="row" spacing={0} justifyContent="left">
+        <Grid container direction="row" spacing={1} justifyContent="left">
           <Grid item xs={4}>
             ADMIN
           </Grid>
@@ -26,12 +35,120 @@ const AccessGroupMoreInfo = (props) => {
             System Administrator
           </Grid>
         </Grid>
-        <Grid container direction="row" spacing={0} justifyContent="left">
+        <Grid container direction="row" spacing={1} justifyContent="left">
           <Grid item xs={4}>
-            Property
+            <label> Property </label>
           </Grid>
           <Grid item xs={8}>
-            Site Services
+            <TextField
+              size="small"
+              required
+              id="arledger-input"
+              name="arledger"
+              autoFocus
+              onChange={(e) => {}}
+            />
+            <Button variant="outlined" className="browserbtn">
+              ...
+            </Button>
+            <label> Site Services </label>
+          </Grid>
+        </Grid>
+        <Grid container direction="row" spacing={1} justifyContent="left">
+          <Grid item xs={2}>
+            <label> Override Center: </label>
+          </Grid>
+          <Grid item xs={3}>
+            <FormControl size="small">
+              <InputLabel id="demo-simple-select-label"></InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={1}
+                onChange={(e) => {}}
+              >
+                <MenuItem value={0}>No</MenuItem>
+                <MenuItem value={1}>Yes</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={7}>
+            <label> Cash Book: </label>
+            <TextField
+              size="small"
+              required
+              id="arledger-input"
+              name="arledger"
+              autoFocus
+              onChange={(e) => {}}
+            />
+            <Button variant="outlined" className="browserbtn">
+              ...
+            </Button>
+          </Grid>
+        </Grid>
+        <Grid container direction="row" spacing={1} justifyContent="left">
+          <Grid item xs={2.5}></Grid>
+          <Grid item xs={1}>
+            <label> Allow </label>
+          </Grid>
+          <Grid item xs={1}>
+            <label> Online </label>
+          </Grid>
+          <Grid item xs={1.5}>
+            <label> Stat </label>
+          </Grid>
+          <Grid item xs={6}>
+            <label> Output Device </label>
+          </Grid>
+        </Grid>
+        <Grid container direction="row" spacing={1} justifyContent="left">
+          <Grid item xs={2.5}>
+            <label>Sales Orders:</label>
+          </Grid>
+          <Grid item xs={1}>
+            <FormControl fullWidth size="small">
+              <InputLabel id="demo-simple-select-label"></InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={1}
+                onChange={(e) => {}}
+              >
+                <MenuItem value={0}>No</MenuItem>
+                <MenuItem value={1}>Yes</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={1}>
+            <FormControl fullWidth size="small">
+              <InputLabel id="demo-simple-select-label"></InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={1}
+                onChange={(e) => {}}
+              >
+                <MenuItem value={0}>No</MenuItem>
+                <MenuItem value={1}>Yes</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={1.5}>
+            <TextField
+              size="small"
+              required
+              id="arledger-input"
+              name="arledger"
+              autoFocus
+              onChange={(e) => {}}
+            />
+            <Button variant="outlined" className="browserbtn">
+              ...
+            </Button>
+          </Grid>
+          <Grid item xs={6}>
+            <label> Output Device </label>
           </Grid>
         </Grid>
         <DialogActions>
