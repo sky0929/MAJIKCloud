@@ -27,8 +27,14 @@ const BatchQueues = () => {
       defaultFlex: 1,
       render: (value) => {
         return (
-          <Grid container direction="row" spacing={0}>
-            <Grid item xs={10} className="list">
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            spacing={0}
+          >
+            <Grid item xs={10}>
               {value.value}
             </Grid>
             <Grid item xs={2}>

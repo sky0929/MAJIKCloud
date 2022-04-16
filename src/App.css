@@ -37,11 +37,14 @@
   }
 }
 
+.browserbox {
+  width: 70%!important;
+}
+
 .browserbtn {
   margin-left: 1px !important;
   padding: 6px 10px !important;
-  min-width: 50px!important;
-  font-weight: bold!important;
+  min-width: 20px!important;
 }
 
 .list {

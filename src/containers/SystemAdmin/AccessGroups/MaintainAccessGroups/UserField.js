@@ -34,7 +34,7 @@ const Security = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Grid item xs={9} className="list">
+            <Grid item xs={9}>
               {value.value}
             </Grid>
             <Grid item xs={3}>
