@@ -75,7 +75,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="arledger-input"
                 name="arledger"
-                autoFocus
                 value={30}
                 onChange={(e) => {}}
               />
@@ -123,7 +122,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="arledger-input"
                 name="arledger"
-                autoFocus
                 value={"CSB"}
                 onChange={(e) => {}}
               />
@@ -200,7 +198,6 @@ const AccessGroupMoreInfo = (props) => {
                 id="stat-input"
                 name="stat"
                 value="XPJOB"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -220,7 +217,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 value={"PRINTER"}
                 className="browserbox"
                 onChange={(e) => {}}
@@ -280,7 +276,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -300,7 +295,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -361,7 +355,6 @@ const AccessGroupMoreInfo = (props) => {
                 id="stat-input"
                 name="stat"
                 value="XPJOB"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -381,7 +374,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 value={"PRINTER"}
                 className="browserbox"
                 onChange={(e) => {}}
@@ -443,7 +435,6 @@ const AccessGroupMoreInfo = (props) => {
                 id="stat-input"
                 name="stat"
                 value="INV"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -463,7 +454,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 value={"PRINTER"}
                 className="browserbox"
                 onChange={(e) => {}}
@@ -524,7 +514,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -544,7 +533,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -590,7 +578,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 value={"POTM"}
                 className="browserbox"
                 onChange={(e) => {}}
@@ -611,7 +598,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 value={"PRINTER"}
                 className="browserbox"
                 onChange={(e) => {}}
@@ -658,7 +644,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -678,7 +663,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 className="browserbox"
                 onChange={(e) => {}}
               />
@@ -754,7 +738,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 fullWidth
                 value={"6,000,000.00"}
                 onChange={(e) => {}}
@@ -769,7 +752,6 @@ const AccessGroupMoreInfo = (props) => {
                 required
                 id="stat-input"
                 name="stat"
-                autoFocus
                 fullWidth
                 value={"500.99"}
                 onChange={(e) => {}}

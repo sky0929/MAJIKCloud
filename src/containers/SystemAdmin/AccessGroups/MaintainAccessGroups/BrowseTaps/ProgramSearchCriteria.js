@@ -150,7 +150,6 @@ const ProgramSearchCriteria = (props) => {
               label="Program Id"
               name="programid"
               autoComplete="programid"
-              autoFocus
               value={"COPHN?????"}
               onChange={(e) => {}}
             />
@@ -164,7 +163,6 @@ const ProgramSearchCriteria = (props) => {
               label="Quick-Key"
               name="quickkey"
               autoComplete="quickkey"
-              autoFocus
               value={""}
               onChange={(e) => {}}
             />
@@ -186,7 +184,6 @@ const ProgramSearchCriteria = (props) => {
               label="Description"
               name="description"
               autoComplete="description"
-              autoFocus
               value={""}
               onChange={(e) => {}}
             />

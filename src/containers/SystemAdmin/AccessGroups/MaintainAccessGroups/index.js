@@ -75,7 +75,6 @@ const MaintainProfiles = ({}) => {
               label="Group Desc"
               name="groupdesc"
               autoComplete="groupdesc"
-              autoFocus
               value={"System Administrator"}
               onChange={(e) => {}}
             />

@@ -33,7 +33,6 @@ const Profiles = () => {
             label="Initial Menu"
             name="initialmenu"
             autoComplete="initialmenu"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -56,7 +55,6 @@ const Profiles = () => {
             label="Float Menu"
             name="floatmenu"
             autoComplete="floatmenu"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -105,7 +103,6 @@ const Profiles = () => {
             label="GL Ledger"
             name="glledger"
             autoComplete="glledger"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -133,7 +130,6 @@ const Profiles = () => {
             label="SL Ledger"
             name="slledger"
             autoComplete="slledger"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -161,7 +157,6 @@ const Profiles = () => {
             label="AR Ledger"
             name="arledger"
             autoComplete="arledger"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -189,7 +184,6 @@ const Profiles = () => {
             label="AP Ledger"
             name="apledger"
             autoComplete="apledger"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -217,7 +211,6 @@ const Profiles = () => {
             label="FA Ledger"
             name="faledger"
             autoComplete="faledger"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -247,7 +240,6 @@ const Profiles = () => {
             label="Def Profile"
             name="defprofile"
             autoComplete="defprofile"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -289,7 +281,6 @@ const Profiles = () => {
             label="Def Queue"
             name="defqueue"
             autoComplete="defqueue"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -331,7 +322,6 @@ const Profiles = () => {
             label="Reports Dir"
             name="reports"
             autoComplete="reports"
-            autoFocus
             onChange={(e) => {}}
           />
         </Grid>
@@ -370,17 +360,17 @@ const Profiles = () => {
       <Grid
         container
         direction="row"
-        justifyContent="center"
+        justifyContent="left"
         alignItems="center"
         spacing={3}
       >
         <Grid item xs={2}>
-          <span>Queues:</span>
+          <label>Queues:</label>
         </Grid>
         <Grid item xs={2}>
-          <span>000000</span>
+          <label>000000</label>
         </Grid>
-        <Grid item xs={8}></Grid>
+        <Grid item xs></Grid>
       </Grid>
     </fragment>
   );
