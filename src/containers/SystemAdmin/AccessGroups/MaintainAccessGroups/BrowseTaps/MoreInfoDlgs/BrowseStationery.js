@@ -65,6 +65,7 @@ const BrowseStationery = (props) => {
                 required
                 id="arledger-input"
                 name="arledger"
+                value={"INSAL"}
                 autoFocus
                 onChange={(e) => {}}
               />
