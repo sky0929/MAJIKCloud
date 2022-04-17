@@ -111,7 +111,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={8}></Grid>
@@ -139,7 +139,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={8}></Grid>
@@ -167,7 +167,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={8}></Grid>
@@ -195,7 +195,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={8}></Grid>
@@ -223,7 +223,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={8}></Grid>
@@ -253,7 +253,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={6}></Grid>
@@ -295,7 +295,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={1}>
           <Button className="browserbtn" variant="outlined">
-            . . .
+            ...
           </Button>
         </Grid>
         <Grid item xs={6}></Grid>
