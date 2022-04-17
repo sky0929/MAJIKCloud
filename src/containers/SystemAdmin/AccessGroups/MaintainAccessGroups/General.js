@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback } from "react";
+import React from "react";
 import {
   TextField,
   FormControl,
@@ -7,14 +7,9 @@ import {
   MenuItem,
   Divider,
 } from "@mui/material";
-import { Box, Button, Grid } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 
 const Profiles = () => {
-  // const [age, setAge] = React.useState("");
-
-  // const handleChange = (event) => {
-  //   setAge(event.target.value);
-  // };
   return (
     <fragment>
       <Grid
@@ -22,7 +17,6 @@ const Profiles = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
       >
         <Grid item xs={4}>
           <TextField
@@ -43,7 +37,6 @@ const Profiles = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
       >
         <Grid item xs={4}>
           <TextField
@@ -65,7 +58,6 @@ const Profiles = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
       >
         <Grid item xs={5}>
           <FormControl fullWidth size="small" margin="normal">
@@ -310,7 +302,6 @@ const Profiles = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
       >
         <Grid item xs={10}>
           <TextField
@@ -332,7 +323,6 @@ const Profiles = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
       >
         <Grid item xs={2}>
           <span>Users:</span>
@@ -347,7 +337,6 @@ const Profiles = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
       >
         <Grid item xs={2}>
           <span>Profiles:</span>
@@ -357,13 +346,7 @@ const Profiles = () => {
         </Grid>
         <Grid item xs={8}></Grid>
       </Grid>
-      <Grid
-        container
-        direction="row"
-        justifyContent="left"
-        alignItems="center"
-        spacing={3}
-      >
+      <Grid container direction="row" justifyContent="left" alignItems="center">
         <Grid item xs={2}>
           <label>Queues:</label>
         </Grid>
